@@ -1,6 +1,6 @@
 import { initializeDilithium } from "./initialize.js";
 import { generateKeypair } from "./generateKeypair.js";
-import { generateSaveKeypair } from "./generateSaveKeypair.js";
+// import { generateSaveKeypair } from "./generateSaveKeypair.js";
 import { signMessage } from "./signMessage.js";
 import { verifySignature } from "./verifySignature.js";
 
@@ -13,8 +13,8 @@ const main = async () => {
         console.log("🔑 Generating keypair...");
 
         // Generate keypair: get WASM pointers
-        const { pkPtr, skPtr } = generateSaveKeypair(api);
-        const { pkPtr1, skPtr2 } = generateSaveKeypair(api);
+        const { pkPtr, skPtr } = generateKeypair(api);
+        // const { pkPtr1, skPtr2 } = generateSaveKeypair(api);
         
         console.log("✅ Keypair generated successfully");
 

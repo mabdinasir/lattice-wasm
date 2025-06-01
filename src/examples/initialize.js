@@ -1,4 +1,4 @@
-import createDilithiumModule from '../src/dilithium.js';
+import createDilithiumModule from '../dilithium.js';
 
 export const initializeDilithium = async () => {
     const Module = await createDilithiumModule();
