@@ -1,4 +1,4 @@
-# lattice-wasm
+# lattice-wasm - dilithium
 
 A WebAssembly + JavaScript wrapper around the Dilithium post-quantum digital signature scheme, compiled using Emscripten.
 
@@ -52,7 +52,7 @@ This project:
 ## 📁 Folder Structure
 
 ```
-lattice-wasm/
+lattice-wasm/dilithium
 ├── examples/             # Example JavaScript usage files
 │   ├── generateKeypair.js
 │   ├── signMessage.js
@@ -116,7 +116,7 @@ mkdir src examples
 ```bash
 cd Desktop(or wherever you cloned the dilithium repo - both dilithium and lattice-wasm should be in the same directory)
 
-emcc lattice-wasm/src/wrapper.c \
+emcc lattice-wasm/dilithium/src/wrapper.c \
     dilithium/ref/fips202.c \
     dilithium/ref/ntt.c \
     dilithium/ref/poly.c \

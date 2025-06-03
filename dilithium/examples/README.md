@@ -15,7 +15,7 @@ All examples use modern ES module syntax (`import`) and are organized for clarit
 ## 📁 Folder Structure
 
 ```
-lattice-wasm/
+lattice-wasm/dilithium
 ├── examples/             # Example JavaScript usage files
 │   ├── generateKeypair.js
 │   ├── signMessage.js
